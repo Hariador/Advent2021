@@ -1,0 +1,15 @@
+{
+    "name": "jonathanreichert/advent2021",
+    "description": "Advent 2021",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jon",
+            "email": "jonathan@boldcommerce.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|8.0",
+        "illuminate/collections": "^8.74"
+    }
+}
