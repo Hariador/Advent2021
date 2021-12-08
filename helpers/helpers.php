@@ -3,7 +3,7 @@
 function pretty_print($array): string {
     $output = "";
     foreach($array as $value) {
-        $output.="{$value}";
+        $output.="{$value} ";
     }
     return $output;
 }
@@ -19,4 +19,8 @@ function convert_bits_to_dec(array $array): int {
     }
 
     return $n;
+}
+
+function printLine(string $s): void {
+    echo($s."\n");
 }

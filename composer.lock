@@ -4,8 +4,48 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe688717dcf606365ee16d64744b76b6",
+    "content-hash": "d022f43c95873fc21e2c077289610c7a",
     "packages": [
+        {
+            "name": "bramus/ansi-php",
+            "version": "3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bramus/ansi-php.git",
+                "reference": "f581b2fd322177e5fabd67af240811838c1c8fbc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bramus/ansi-php/zipball/f581b2fd322177e5fabd67af240811838c1c8fbc",
+                "reference": "f581b2fd322177e5fabd67af240811838c1c8fbc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bramus\\Ansi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bramus Van Damme",
+                    "email": "bramus@bram.us",
+                    "homepage": "https://www.bram.us/"
+                }
+            ],
+            "description": "ANSI Control Functions and ANSI Control Sequences (Colors, Erasing, etc.) for PHP CLI Apps",
+            "time": "2021-10-28T10:45:05+00:00"
+        },
         {
             "name": "illuminate/collections",
             "version": "v8.74.0",
@@ -241,6 +281,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7.4|8.0"
+    },
     "platform-dev": []
 }
