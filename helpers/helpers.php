@@ -24,3 +24,17 @@ function convert_bits_to_dec(array $array): int {
 function printLine(string $s): void {
     echo($s."\n");
 }
+
+function str_con(string $needles, string $search): string  {
+    $result = "";
+    $sStrings = str_split($search);
+    foreach(str_split($needles) as $needle) {
+        foreach($sStrings as $char) {
+            if($needle == $char) {
+                $result .= $needle;
+                break;
+            }
+        }
+    }
+    return $result;
+}
