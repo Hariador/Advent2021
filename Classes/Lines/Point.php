@@ -18,8 +18,20 @@ class Point
         return "(".$this->x.",".$this->y.")";
     }
 
+    public function getKey(): string {
+        return $this->x."-".$this->y;
+    }
+
     public function X(): int {
         return $this->x;
+    }
+
+    public function setX(int $x): void {
+        $this->x = $x;
+    }
+
+    public function setY(int $y): void {
+        $this->y = $y;
     }
 
     public function Y(): int {

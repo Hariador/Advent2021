@@ -21,7 +21,7 @@ function convert_bits_to_dec(array $array): int {
     return $n;
 }
 
-function printLine(string $s): void {
+function printLine(string $s = ""): void {
     echo($s."\n");
 }
 
