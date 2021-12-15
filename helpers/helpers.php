@@ -3,7 +3,15 @@
 function pretty_print($array): string {
     $output = "";
     foreach($array as $value) {
-        $output.="{$value} ";
+        $output.="{$value}";
+    }
+    return $output;
+}
+
+function pretty_print_assoc($array): string {
+    $output = "";
+    foreach($array as $key =>$value) {
+        $output.="{$key}={$value} ";
     }
     return $output;
 }
